@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    div{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: cornflowerblue;
+      /*animation: hh 3s linear 0s infinite;*/
+      animation: hh 3s linear 0s 3;
+    }
+    @-webkit-keyframes hh {
+      from{
+        left: 0px;
+        background-color: cornflowerblue;
+        border-radius: 0px 0px 0px 0px;
+        font-size: 1px;
+
+      }
+      to{
+        left: 500px;
+        background-color: aquamarine;
+        border-radius: 50%;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h1>123456</h1>
+</div>
+</body>
+</html>
