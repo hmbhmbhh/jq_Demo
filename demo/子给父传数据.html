@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .bai {
+      width: 80%;
+      height: 300px;
+      background-color: #b3d4fc;
+      margin: 10px auto;
+
+    }
+
+    #chi {
+      width: 50%;
+      height: 100px;
+      background-color: cadetblue;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+<div class="bai" id="app">
+  <h1 align="center">白胡子{{ms}}</h1>
+  <!-- 括号的参数一般都用$event -->
+  <son id="chi" @dizhen="get($event)"></son>
+</div>
+<template id="son">
+  <div>
+    <button @click="send">点击我给白胡子传送地震果实</button>
+
+  </div>
+
+</template>
+</body>
+</html>
+<script>
+  const a = new Vue({
+    el: "#app",
+    data: {
+      ms: '2'
+    },
+    methods: {
+      //参数名随便定义
+      get(lieu) {
+        this.ms = lieu;
+      }
+    },
+    components: {
+      //子组件
+      son: {
+        template: "#son",
+        //                      重要：子组件的数据data必须是一个函数，函数必须有返回值
+        data() {
+          return {
+            msg: "地震果实果然是香"
+          }
+        },
+        methods: {
+          //给父亲传递数据方法
+          send() {
+            //出发自定义事件，通过组件$emit方法
+            //参数1：父组件接受数据的自定义事件名---@dizhen
+            this.$emit("dizhen", this.msg);
+
+          }
+        }
+
+      }
+    }
+  });
+
+</script>

@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9dc47d76-3566-4926-af9d-a12e506d6a0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/demo/h5新特性.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/h5新特性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/vue模板.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/子给父传数据.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/父给子传值.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -47,14 +75,56 @@
       <updated>1604471588328</updated>
       <workItem from="1604471592187" duration="6790000" />
       <workItem from="1604568519651" duration="3112000" />
-      <workItem from="1604575688260" duration="231000" />
+      <workItem from="1604575688260" duration="437000" />
+      <workItem from="1604625785110" duration="16822000" />
+      <workItem from="1604900791492" duration="7508000" />
     </task>
+    <task id="LOCAL-00001" summary="1、second commit">
+      <created>1604576011830</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604576011830</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1、second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、second commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="383" y="46" key="#Inspections" timestamp="1604643368071">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="383" y="46" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1604643368071" />
     <state x="323" y="114" key="#Notifications" timestamp="1604471622135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -63,25 +133,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="212" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604486286157" />
-    <state width="1499" height="329" key="GridCell.Tab.0.bottom" timestamp="1604575846075">
+    <state x="109" y="0" key="CommitChangelistDialog2" timestamp="1604576010727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1499" height="329" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604575846075" />
-    <state width="1499" height="329" key="GridCell.Tab.0.center" timestamp="1604575846075">
+    <state x="109" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604576010727" />
+    <state width="1499" height="329" key="GridCell.Tab.0.bottom" timestamp="1604576126412">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1499" height="329" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604575846075" />
-    <state width="1499" height="329" key="GridCell.Tab.0.left" timestamp="1604575846075">
+    <state width="1499" height="329" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604576126412" />
+    <state width="1499" height="329" key="GridCell.Tab.0.center" timestamp="1604576126411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1499" height="329" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604575846075" />
-    <state width="1499" height="329" key="GridCell.Tab.0.right" timestamp="1604575846075">
+    <state width="1499" height="329" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604576126411" />
+    <state width="1499" height="329" key="GridCell.Tab.0.left" timestamp="1604576126411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1499" height="329" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604575846075" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1604474946266">
+    <state width="1499" height="329" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604576126411" />
+    <state width="1499" height="329" key="GridCell.Tab.0.right" timestamp="1604576126411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604474946266" />
+    <state width="1499" height="329" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604576126411" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1604642871866">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604642871866" />
+    <state x="61" y="0" key="Vcs.Push.Dialog.v2" timestamp="1604576027491">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="61" y="0" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604576027491" />
+    <state x="177" y="-2" width="1177" height="1976" key="search.everywhere.popup" timestamp="1604900927061">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="177" y="-2" width="1177" height="1976" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604900927061" />
   </component>
 </project>

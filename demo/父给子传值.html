@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    #app {
+      width: 70%;
+      height: 300px;
+      background-color: #b3d4fc;
+      margin: 10px auto;
+    }
+
+    .son {
+      width: 50%;
+      height: 100px;
+      background-color: yellow;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <h1 class="dad" align="center">爸爸有一个亿</h1>
+  <erzi class="son" :money="money" :gril="gril"></erzi>
+</div>
+<template id="erzi">
+  <h1>爸爸给儿子说{{money}}{{gril}}</h1>
+
+</template>
+</body>
+</html>
+<script>
+  var b = new Vue({
+    el: "#app",
+    data: {
+      gril: '先处着',
+      money: 'gei5000块钱先花着，不够再给'
+    },
+    methods: {},
+    components: {
+      erzi: {
+        template: "#erzi",
+        //接受父组件传递数据
+        props: ["money", 'gril']
+      }
+    }
+  });
+</script>

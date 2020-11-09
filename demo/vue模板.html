@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #app {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: cornflowerblue;
+      margin: 100px;
+    }
+
+    .dg {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: #6bed64;
+      float: left;
+      margin: 10px;
+      padding: 15px;
+    }
+
+    .dsad {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: #ed8664;
+      float: left;
+      margin: 10px;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <baidu></baidu>
+  <jc></jc>
+  <jc></jc>
+  <jc></jc>
+  <jc></jc>
+  <jc></jc>
+
+</div>
+<template id="aod">
+  <div @click="boom" class="dg">
+    <p>{{msg}}</p>
+  </div>
+</template>
+<template id="baidu">
+  <div class="dsad">
+    <a href="https://www.baidu.com/">{{msf}}</a>
+
+  </div>
+
+</template>
+</body>
+</html>
+<script>
+  //全局组件需要放在局部组件的上面，否则不生效
+  //组件名字baidu
+  Vue.component("baidu", {
+    template: "#baidu",//模板id
+    data() {
+      return {
+        msf: 2
+      };
+    }
+  });
+  const a = new Vue({
+    //挂载点
+    el: "#app",
+    method: {},
+    data: {},
+    watch: {},
+    //注意别写错
+    //局部组件
+    components: {
+      //组件名字
+      jc: {
+        //组件模板
+        template: '#aod',//模板id
+        data() {
+          return {
+            msg: 1
+          }
+        },
+        methods: {
+          boom() {
+            this.msg++;
+          }
+        }
+
+      }
+    }
+
+  });
+</script>
