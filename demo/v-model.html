@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+</head>
+<body>
+<div id="app">
+  <!-- 复选框  -->
+  <input type="checkbox" v-model="isMod">
+  <div>{{isMod}}</div>
+  <!-- 多选框 -->
+  <input type="checkbox" v-model="likes" value="篮球">篮球</input>
+  <input type="checkbox" v-model="likes" value="网球">网球</nput>
+  <input type="checkbox" v-model="likes" value="溜溜球">溜溜球</input>
+  <div>{{likes}}</div>
+  <hr>
+  <!-- 单选框 -->
+  性别<input type="radio" value="男" v-model="gender">男</input><input type="radio" value="女" v-model="gender">女</input>
+  <div>{{gender}}</div>
+  <hr>
+  <!-- 下拉框 -->
+  <select v-model="likes" multiple>
+    <option v-for="f in fs" :key="f.id" :value="f">
+      {{f}}
+    </option>
+  </select>
+  <hr>
+  <input
+    type="checkbox"
+    v-model="toggle"
+    true-value="yes"
+    false-value="no"
+  />
+  <div>{{toggle}}</div>
+</div>
+</body>
+</html>
+<script>
+  var a = new Vue({
+    el: '#app',
+    data: {
+      isMod: false,
+      //  多个爱好定义为一个数组
+      likes: [],
+      // 这里可以默认没选项，如果是''空字符串，选哪个性别就是哪个性别，如果有‘女’，默认选中女
+      gender: '女',
+      fs: [
+        '篮球',
+        '网球',
+        '溜溜球'
+      ],
+      toggle:''
+    }
+  })
+</script>
